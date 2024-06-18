@@ -3,11 +3,11 @@
 import { useEffect } from "react"
 
 
-const error = ({Error, reset}) => {
+const Error = ({error, reset}) => {
 
     useEffect(()=>{
-        console.log('error', Error)
-    }, [Error])
+        console.log('error', error)
+    }, [error])
   return (
     <div className="flex flex-col justify-center items-center pt-10">
         <h1 className=" text-3xl mb-4">Something Went Wrong !</h1>
@@ -16,4 +16,4 @@ const error = ({Error, reset}) => {
   )
 }
 
-export default error
+export default Error
